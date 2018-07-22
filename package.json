@@ -1,0 +1,18 @@
+{
+  "dependencies": {
+    "uikit": "^3.0.0-rc.9"
+  },
+  "name": "portfolio template",
+  "description": "",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {
+    "browser-sync": "^2.24.5",
+    "gulp": "^3.9.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "gunnar normand",
+  "license": "MIT"
+}

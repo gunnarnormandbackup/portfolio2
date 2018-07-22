@@ -1,0 +1,197 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<title>Gunnar Normand | Interactive Developer</title>
+		<meta name="description" content="portfolio template">
+		<meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=no">
+		<link rel="shortcut icon" href="/favicon.ico">
+		<!-- <link rel="stylesheet" href="dist/css/reset.css"> -->
+		<link href="src/css/uikit-rtl.css" rel="stylesheet" type="text/css">
+    <link href="src/css/uikit.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+
+		<div id="loader-overlay">
+			<div class="align-loader">
+				<div id="spinner" uk-spinner="ratio: 3"></div>
+			</div>
+		</div>
+
+    <div class="uk-offcanvas-content">
+
+        <!-- navbar -->
+
+
+
+
+        <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+          <nav class="uk-navbar-container" uk-navbar>
+            <div class="uk-navbar-left">
+              <a uk-toggle="target: #off-canvas-nav" class="uk-navbar-toggle" uk-navbar-toggle-icon href=""></a>
+            </div>
+						<div class="uk-navbar-center">
+							<a href="#" class="uk-logo">logo</a>
+						</div>
+          </nav>
+        </div>
+        <!-- navbar end -->
+
+        <a href="#off-canvas-nav" uk-toggle></a>
+        <!-- off-canvas nav -->
+        <div id="off-canvas-nav" uk-offcanvas>
+          <div class="uk-offcanvas-bar uk-flex uk-flex-column">
+            <button class="uk-offcanvas-close" type="button" uk-close></button>
+            <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
+                <li class="uk-active"><a href="#">Active</a></li>
+                <li class="uk-parent">
+                    <a href="#">Parent</a>
+                    <ul class="uk-nav-sub">
+                        <li><a href="#">Sub item</a></li>
+                        <li><a href="#">Sub item</a></li>
+                    </ul>
+                </li>
+                <li class="uk-nav-header">Header</li>
+                <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: table"></span> Item</a></li>
+                <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: thumbnails"></span> Item</a></li>
+                <li class="uk-nav-divider"></li>
+                <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: trash"></span> Item</a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- off-canvas nav end -->
+    </div>
+
+  <div id="slideshow" class="uk-position-relative uk-visible-toggle uk-light " uk-slideshow=" autoplay: true; animation: push">
+
+    <ul class="uk-slideshow-items" uk-height-viewport="offset-top: true; offset-bottom: 0" >
+        <li>
+            <div class="uk-position-cover" uk-slideshow-parallax="scale: 1.2,1.2,1">
+                <img src="https://picsum.photos/1200?image=1002" alt="" uk-cover>
+            </div>
+            <div class="uk-position-cover uk-animation-kenburns uk-animation-reverse uk-transform-origin-center-left" uk-slideshow-parallax="opacity: 0,0,0.6; backgroundColor: #fff,#fff"></div>
+            <div class="uk-position-center uk-position-medium uk-text-center">
+                <div uk-slideshow-parallax="scale: 1,1,0.8">
+                    <h2 uk-slideshow-parallax="x: 200,0,0">Heading</h2>
+                    <p uk-slideshow-parallax="x: 400,0,0;">Lorem ipsum dolor sit amet.</p>
+                    <p uk-slideshow-parallax="x: 600,0,0;"><a class="uk-button uk-button-default" href="#modal-full" uk-toggle>Open</a></p>
+                    <div id="modal-full" class="uk-modal-full" uk-modal>
+                        <div class="uk-modal-dialog">
+                            <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
+                            <div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle" uk-grid>
+                                <div class="uk-background-cover modal-bg" style="background-image: url('https://picsum.photos/1200?image=900');" uk-height-viewport></div>
+                                <div class="uk-padding-large">
+                                    <h1>Work Item 1</h1>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                    <a href="#">work link</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="uk-position-cover" uk-slideshow-parallax="scale: 1.2,1.2,1">
+                <img src="https://picsum.photos/1200?image=950" alt="" uk-cover>
+            </div>
+            <div class="uk-position-cover uk-animation-kenburns uk-animation-reverse uk-transform-origin-center-left" uk-slideshow-parallax="opacity: 0,0,0.6; backgroundColor: #fff,#fff"></div>
+            <div class="uk-position-center uk-position-medium uk-text-center">
+                <div uk-slideshow-parallax="scale: 1,1,0.8">
+                    <h2 uk-slideshow-parallax="x: 200,0,0">Heading</h2>
+                    <p uk-slideshow-parallax="x: 400,0,0;">Lorem ipsum dolor sit amet.</p>
+                    <p uk-slideshow-parallax="x: 600,0,0;"><a class="uk-button uk-button-default" href="#modal-full-1" uk-toggle>Open</a></p>
+                    <div id="modal-full-1" class="uk-modal-full" uk-modal>
+                        <div class="uk-modal-dialog">
+                            <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
+                            <div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle" uk-grid>
+                                <div class="uk-background-cover modal-bg" style="background-image: url('https://picsum.photos/1200?image=953');" uk-height-viewport></div>
+                                <div class="uk-padding-large">
+                                    <h1>Work Item 2</h1>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                    <a href="#">work link</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="uk-position-cover" uk-slideshow-parallax="scale: 1.2,1.2,1">
+                <img src="https://picsum.photos/1200?image=1000" alt="" uk-cover>
+            </div>
+            <div class="uk-position-cover uk-animation-kenburns uk-animation-reverse uk-transform-origin-center-left" uk-slideshow-parallax="opacity: 0,0,0.6; backgroundColor: #fff,#fff"></div>
+            <div class="uk-position-center uk-position-medium uk-text-center">
+                <div uk-slideshow-parallax="scale: 1,1,0.8">
+                    <h2 uk-slideshow-parallax="x: 200,0,0">Heading</h2>
+                    <p uk-slideshow-parallax="x: 400,0,0;">Lorem ipsum dolor sit amet.</p>
+                    <p uk-slideshow-parallax="x: 600,0,0;"><a class="uk-button uk-button-default" href="#modal-full-2" uk-toggle>Open</a></p>
+                    <div id="modal-full-2" class="uk-modal-full" uk-modal>
+                        <div class="uk-modal-dialog">
+                            <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
+                            <div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle" uk-grid>
+                                <div class="uk-background-cover modal-bg" style="background-image: url('https://picsum.photos/1200?image=888');" uk-height-viewport></div>
+                                <div class="uk-padding-large">
+                                    <h1>Work Item 3</h1>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                    <a href="#">work link</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li>
+    </ul>
+
+    <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+
+  </div>
+
+<div class="uk-section uk-section-large uk-section-muted">
+    <div class="uk-container">
+
+        <h3>Section Large</h3>
+
+        <div class="uk-grid-match uk-child-width-1-3@m" uk-grid>
+            <div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+            </div>
+            <div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+            </div>
+            <div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+  <div class="uk-section uk-section-primary uk-light">
+    <div class="uk-container">
+        <p>footer text</p>
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+
+		<!-- JS -->
+		<script src="src/js/gsap-min/TweenMax.min.js"></script>
+		<script src="src/js/gsap-min/utils/SplitText.min.js"></script>
+		<script src="src/js/gsap-min/plugins/ScrambleTextPlugin.min.js"></script>
+		<script src="src/js/gsap-min/plugins/ScrollToPlugin.min.js"></script>
+    <script src="src/js/uikit.min.js"></script>
+    <script src="src/js/uikit-icons.min.js"></script>
+    <script type="text/javascript" src="src/js/main.js">
+
+    </script>
+	</body>
+</html>
